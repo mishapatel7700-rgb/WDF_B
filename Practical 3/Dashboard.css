@@ -1,0 +1,83 @@
+*{box-sizing:border-box;}
+body{font-family:Arial,sans-serif;background:beige;margin:0;padding:0;color:#123A70;}
+header{text-align:center;padding-top:20px;}
+header h1{color:#123A70;font-size:36px;margin-bottom:10px;}
+header p{color:#555;font-size:18px;margin-bottom:25px;}
+hr{border:0;height:1px;background:#ccc;margin:20px 0 25px;}
+nav{display:flex;justify-content:center;align-items:center;gap:25px;margin-bottom:60px;}
+nav a{color:#123A70;text-decoration:none;font-weight:bold;font-size:18px;padding:10px 14px;border-radius:6px;transition:.25s;}
+nav a:hover{background:#123A70;color:#fff;}
+nav span{color:#111;font-size:20px;}
+section h2{text-align:center;color:#092b52;font-size:30px;margin-bottom:30px;position:relative;}
+section h2::after{content:"";display:block;width:60px;height:4px;background:#1687d4;margin:10px auto 0;border-radius:5px;}
+.slider-section,.facilities-section{width:92%;max-width:1150px;margin:0 auto;}
+.slider-section{margin-bottom:70px;}
+.facilities-section{margin-bottom:50px;}
+.slider{width:100%;height:500px;position:relative;overflow:hidden;border-radius:18px;background:#123A70;box-shadow:0 10px 30px rgba(24,55,87,.18);}
+.slides{width:600%;height:100%;display:flex;animation:slideAnimation 30s infinite;}
+.slide{width:16.666%;height:100%;position:relative;flex-shrink:0;display:flex;justify-content:center;align-items:center;background:#123A70;}
+.slide img{width:100%;height:100%;object-fit:contain;display:block;}
+.slide::after{content:"";position:absolute;left:0;right:0;bottom:0;height:45%;background:linear-gradient(transparent,rgba(0,0,0,.75));pointer-events:none;}
+.slide-caption{position:absolute;left:35px;bottom:30px;z-index:2;color:#fff;text-align:left;}
+.slide-caption h3{font-size:28px;margin:0 0 8px;}
+.slide-caption p{font-size:16px;margin:0;color:#fff;}
+.slider-dots{position:absolute;bottom:18px;right:30px;z-index:5;display:flex;gap:8px;}
+.slider-dots span{width:10px;height:10px;background:#fff;border-radius:50%;opacity:.7;}
+@keyframes slideAnimation{
+0%,13%{transform:translateX(0);}
+16%,29%{transform:translateX(-16.666%);}
+32%,45%{transform:translateX(-33.333%);}
+48%,61%{transform:translateX(-50%);}
+64%,77%{transform:translateX(-66.666%);}
+80%,93%{transform:translateX(-83.333%);}
+100%{transform:translateX(0);}
+}
+.facilities-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.facility-card{height:235px;position:relative;background:#fff;border:1px solid #e5ebf2;border-radius:14px;overflow:hidden;box-shadow:0 5px 18px rgba(24,55,87,.06);transition:.3s;}
+.facility-card:hover{transform:translateY(-7px);box-shadow:0 15px 30px rgba(24,55,87,.16);border-color:#1687d4;}
+.facility-front{padding:32px 28px;height:100%;transition:.3s;}
+.facility-front h3{color:#1261a0;font-size:22px;margin:0 0 15px;}
+.facility-front p{color:#718096;font-size:16px;line-height:1.6;margin:0;}
+.facility-info{position:absolute;inset:0;padding:25px 28px;background:linear-gradient(135deg,#092b52,#1261a0);color:#fff;opacity:0;transform:translateY(100%);transition:.35s;}
+.facility-card:hover .facility-info{opacity:1;transform:translateY(0);}
+.facility-card:hover .facility-front{opacity:0;transform:translateY(-20px);}
+.facility-info h3{font-size:22px;margin:0 0 10px;color:#fff;}
+.facility-info p{font-size:14px;line-height:1.5;margin:0 0 10px;color:#eaf4ff;}
+.facility-info ul{margin:0;padding-left:18px;}
+.facility-info li{font-size:13px;line-height:1.6;color:#fff;}
+footer{text-align:center;padding:20px 10px;margin-top:30px;}
+footer p{color:#555;font-size:17px;}
+@media(max-width:900px){
+.facilities-grid{grid-template-columns:repeat(2,1fr);}
+.slider{height:400px;}
+nav{gap:10px;}
+nav a{font-size:16px;}
+}
+@media(max-width:600px){
+header h1{font-size:28px;}
+header p{font-size:15px;}
+nav{flex-wrap:wrap;gap:5px;margin-bottom:40px;}
+nav span{display:none;}
+.slider{height:300px;border-radius:12px;}
+.slide-caption{left:20px;bottom:25px;}
+.slide-caption h3{font-size:21px;}
+.slide-caption p{font-size:13px;}
+.facilities-grid{grid-template-columns:1fr;}
+.facility-card{height:240px;}
+}
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 25px;
+    background-color: #123A70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0b2347;
+    transform: translateY(-2px);
+}

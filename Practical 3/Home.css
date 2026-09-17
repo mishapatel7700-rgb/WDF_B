@@ -1,0 +1,346 @@
+/* ================================
+   CHARUSAT STUDENT PORTAL
+   Professional Home Page CSS
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: beige;
+    color: #04557e;
+    line-height: 1.6;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+
+body > center:first-of-type {
+    background: beige;
+    color: white;
+    padding: 35px 20px 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* CHARUSAT LOGO */
+body > center:first-of-type img {
+    background: beige !important;
+    mix-blend-mode: multiply;
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+body > center:first-of-type h1 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+body > center:first-of-type p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+body > center:first-of-type hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(8, 47, 73, 0.25);
+    margin: 0 auto 20px;
+}
+
+/* ================================
+   NAVIGATION
+   ================================ */
+
+body > center:first-of-type a {
+    display: inline-block;
+    color: rgb(12, 76, 133);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+body > center:first-of-type a:hover {
+    background: rgba(17, 65, 137, 0.15);
+    transform: translateY(-2px);
+}
+
+/* ================================
+   UNIVERSITY INTRODUCTION
+   ================================ */
+
+body > center:nth-of-type(2) {
+    padding: 55px 20px 40px;
+    background: beige;
+}
+
+body > center:nth-of-type(2) img {
+    width: 280px !important;
+    max-width: 90%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+body > center:nth-of-type(2) h1 {
+    color: #185c71 !important;
+    font-size: 34px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+body > center:nth-of-type(2) h2 {
+    color: #e85d04 !important;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+body > center:nth-of-type(2) a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #0c4c85;
+    padding: 10px 20px;
+    margin: 5px 3px;
+    border-radius: 6px;
+    font-size: 15px !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(150, 169, 81, 0.25);
+}
+
+body > center:nth-of-type(2) a:hover {
+    background: #e85d04;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(232, 93, 4, 0.25);
+}
+
+/* ================================
+   HERO IMAGE
+   ================================ */
+
+/* Prevent CHARUSAT photo from being cropped */
+body > img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none;
+    object-fit: contain !important;
+    object-position: center;
+    display: block;
+    filter: brightness(0.95);
+}
+
+/* ================================
+   ACHIEVEMENT / ACCREDITATION AREA
+   ================================ */
+
+body > div {
+    width: 90%;
+    max-width: 1100px;
+    margin: 18px auto;
+    padding: 22px 25px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-left: 5px solid #0b6477;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+
+body > div:hover {
+    transform: translateY(-4px);
+    border-left-color: #e85d04;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Achievement icons */
+
+body > div img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: contain;
+    margin-right: 5px !important;
+    flex-shrink: 0;
+}
+
+/* Achievement text */
+
+body > div b {
+    font-size: 18px !important;
+    color: #04344b;
+    font-weight: 600;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 768px) {
+
+    body > center:first-of-type {
+        padding: 25px 15px;
+    }
+
+    body > center:first-of-type img {
+        max-width: 95%;
+        height: auto;
+    }
+
+    body > center:first-of-type h1 {
+        font-size: 28px;
+    }
+
+    body > center:first-of-type p {
+        font-size: 14px;
+    }
+
+    body > center:first-of-type a {
+        font-size: 14px;
+        padding: 7px 8px;
+    }
+
+    body > center:nth-of-type(2) {
+        padding: 35px 15px;
+    }
+
+    body > center:nth-of-type(2) h1 {
+        font-size: 27px;
+    }
+
+    body > center:nth-of-type(2) h2 {
+        font-size: 17px;
+    }
+
+    body > center:nth-of-type(2) a {
+        padding: 9px 14px;
+        font-size: 14px !important;
+    }
+
+    /* Keep full photo visible on tablet */
+    body > img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
+    }
+
+    body > div {
+        width: 92%;
+        padding: 18px;
+        gap: 12px;
+    }
+
+    body > div img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    body > div b {
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body > center:first-of-type {
+        padding: 20px 10px;
+    }
+
+    body > center:first-of-type img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    body > center:first-of-type h1 {
+        font-size: 23px;
+    }
+
+    body > center:first-of-type a {
+        margin: 3px 1px;
+        padding: 6px 7px;
+        font-size: 12px;
+    }
+
+    body > center:nth-of-type(2) img {
+        width: 220px !important;
+    }
+
+    body > center:nth-of-type(2) h1 {
+        font-size: 23px;
+    }
+
+    body > center:nth-of-type(2) a {
+        font-size: 13px !important;
+        padding: 8px 11px;
+    }
+
+    /* Full photo without cropping on mobile */
+    body > img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
+    }
+
+    body > div {
+        padding: 15px;
+        margin: 12px auto;
+    }
+
+    body > div img {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    body > div b {
+        font-size: 14px !important;
+    }
+}
+
+/* ================================
+   SCROLLBAR
+   ================================ */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eef2f4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0b6477;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #07495a;
+}

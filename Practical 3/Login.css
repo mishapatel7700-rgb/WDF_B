@@ -1,0 +1,7 @@
+body { background-color: beige; font-family: sans-serif; text-align: center; }
+h1 { color: rgb(23, 23, 106); }
+a { display: inline-block; padding: 6px 12px; color: #123A70; text-decoration: none; font-weight: bold; }
+a:hover { color: brown; background-color: #e0d8c3; border-radius: 4px; }
+input { font-size: 18px; padding: 5px; margin: 5px; display: inline-block; border: 1px solid #ccc; border-radius: 4px; }
+button { display: inline-block; padding: 8px 16px; background-color: #123A70; color: white; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background-color: brown; transform: scale(1.05); }

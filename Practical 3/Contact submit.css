@@ -1,0 +1,7 @@
+body { background-color: beige; font-family: sans-serif; text-align: center; }
+h2 { color: #2e7d32; display: inline-block; margin-top: 50px; padding: 15px 25px; background-color: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 8px; }
+a { display: inline-block; text-decoration: none; margin-top: 20px; }
+a { display: inline-block; padding: 10px 18px; color: #123A70; text-decoration: none; font-weight: bold; font-size: 18px; border-radius: 6px; transition: 0.2s; }
+a:hover { background-color: #123A70; color: white; }
+button { display: inline-block; padding: 10px 24px; background-color: #123A70; color: white; font-size: 16px; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background-color: #2e7d32; transform: scale(1.05); }
