@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARUSAT Registration</title>
+    <link rel="stylesheet" href="Register.css">
+    <link rel="stylesheet" href="darktheme.css">
+</head>
+
+<body>
+<button id="themeBtn">Dark Mode</button>
+<header>
+    <h1>CHARUSAT Student Portal</h1>
+    <p>Everything you need for your academic journey in one place.</p>
+    <hr>
+</header>
+
+<h1>Register</h1>
+
+<form id="registrationForm">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <br><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" required>
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <br><br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" required>
+    <br><br>
+
+    <label for="course">Course:</label>
+    <select id="course" required>
+        <option value="">Select Course</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="MCA">MCA</option>
+        <option value="MBA">MBA</option>
+    </select>
+    <br><br>
+
+    <label for="year">Year:</label>
+    <select id="year" required>
+        <option value="">Select Year</option>
+        <option value="1">First Year</option>
+        <option value="2">Second Year</option>
+        <option value="3">Third Year</option>
+        <option value="4">Fourth Year</option>
+    </select>
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+    <br><br>
+
+    <input type="checkbox" id="terms" required>
+    <label for="terms">I accept the Terms and Conditions</label>
+    <br>
+
+    <button type="submit">Register</button>
+
+    <a href="Login.html">
+        <button type="button">Already Registered? Login here</button>
+    </a>
+
+</form>
+
+<footer>
+    <p>© 2026 CHARUSAT Student Portal. All rights reserved.</p>
+</footer>
+
+<script src="Register1.js"></script>
+<script src="darktheme.js"></script>
+
+</body>
+</html>
