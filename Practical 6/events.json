@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Annual Tech Fest",
+        "date": "2026-08-15",
+        "category": "Technical",
+        "description": "Join us for coding contests, robotics displays and guest lectures.",
+        "image": "photo3.jpg",
+        "registerLink": "#"
+    },
+    {
+        "id": 2,
+        "title": "National Level Hackathon 2026",
+        "date": "2026-09-22",
+        "category": "Technical",
+        "description": "A 36-hour intense coding sprint designed to build innovative solutions for real-world municipal and industrial problems.",
+        "image": "photo11.jpg",
+        "registerLink": "#"
+    },
+    {
+        "id": 3,
+        "title": "Spandan: Annual Cultural Night",
+        "date": "2026-10-05",
+        "category": "Cultural",
+        "description": "Celebrate diversity with classical music performances, stage plays, talent showcases, and a competitive group dance showdown.",
+        "image": "photo5.jpg",
+        "registerLink": "#"
+    },
+    {
+        "id": 4,
+        "title": "Inter College Cricket Tournament",
+        "date": "2026-10-18",
+        "category": "Sports",
+        "description": "Participate in the annual inter-college cricket tournament and represent CHARUSAT.",
+        "image": "sports.jpg",
+        "registerLink": "#"
+    },
+    {
+        "id": 5,
+        "title": "AI and Machine Learning Workshop",
+        "date": "2026-11-02",
+        "category": "Workshop",
+        "description": "Learn the fundamentals of artificial intelligence and machine learning through practical demonstrations.",
+        "image": "photo7.jpg",
+        "registerLink": "#"
+    },
+    {
+        "id": 6,
+        "title": "Entrepreneurship Summit 2026",
+        "date": "2026-11-15",
+        "category": "Seminar",
+        "description": "Meet entrepreneurs, startup founders and industry experts and learn about building a successful startup.",
+        "image": "photo8.jpg",
+        "registerLink": "#"
+    },
+    {
+        "id": 7,
+        "title": "Annual Science Exhibition",
+        "date": "2026-12-01",
+        "category": "Academic",
+        "description": "Explore innovative student projects, scientific models and research demonstrations.",
+        "image": "photo9.jpg",
+        "registerLink": "#"
+    },
+    {
+        "id": 8,
+        "title": "CHARUSAT Alumni Meet",
+        "date": "2026-12-20",
+        "category": "Alumni",
+        "description": "Reconnect with CHARUSAT alumni and participate in networking and interactive sessions.",
+        "image": "photo10.jpg",
+        "registerLink": "#"
+    }
+]

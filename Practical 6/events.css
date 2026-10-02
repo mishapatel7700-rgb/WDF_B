@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAF6E3;
+    color: #0A3663;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #123A70;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+nav a {
+    color: #123A70;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    background: #123A70;
+    color: #fff;
+}
+
+nav span {
+    color: #111;
+    font-size: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 4px;
+    background-color: #0056b3;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.controls {
+    max-width: 950px;
+    margin: 0 auto 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(10, 54, 99, 0.1);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+}
+
+.controls input,
+.controls select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    color: #123A70;
+    background: #fff;
+}
+
+.controls input:focus,
+.controls select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 4px rgba(0, 86, 179, 0.2);
+}
+
+.result-info {
+    max-width: 950px;
+    margin: 0 auto 20px;
+}
+
+.result-info p {
+    color: #555;
+    font-size: 15px;
+}
+
+.events-container {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(10, 54, 99, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 22px;
+}
+
+.card-title {
+    color: #0A3663;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.card-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.card-category {
+    display: inline-block;
+    background: #e8f1fb;
+    color: #0056b3;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card-text {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #0A3663;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: #666;
+}
+
+.pagination {
+    max-width: 950px;
+    margin: 30px auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination button {
+    background-color: #0A3663;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.pagination button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+#pageInfo {
+    font-weight: bold;
+    color: #123A70;
+}
+
+@media (max-width: 800px) {
+    .controls {
+        grid-template-columns: 1fr;
+    }
+
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav span {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .card-img {
+        height: 200px;
+    }
+
+    .pagination {
+        gap: 10px;
+    }
+}

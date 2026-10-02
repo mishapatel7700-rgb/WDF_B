@@ -1,0 +1,6 @@
+{
+    "apiKey": "7fb64c96c91f0a1f98cf80297399f990",
+    "baseUrl": "https://api.openweathermap.org/data/2.5/weather",
+    "units": "metric",
+    "updateInterval": 300000
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARUSAT Student Portal - Events</title>
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="darktheme.css">
+</head>
+
+<body>
+<button id="themeBtn">Dark Mode</button>
+<header>
+    <h1>CHARUSAT Student Portal</h1>
+    <p>Everything you need for your academic journey in one place.</p>
+    <hr>
+
+    <nav>
+        <a href="Dashboard.html">Dashboard</a>
+        <span>|</span>
+        <a href="About.html">About</a>
+        <span>|</span>
+        <a href="Profile.html">Profile</a>
+        <span>|</span>
+        <a href="Inquiry.html">Inquiry</a>
+        <span>|</span>
+        <a href="Feedback.html">Feedback</a>
+        <span>|</span>
+        <a href="Events.html">Events</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2 class="section-title">CHARUSAT CAMPUS EVENTS</h2>
+
+    <section class="controls">
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search events..."
+            >
+        </div>
+
+        <div class="filter-box">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+        </div>
+
+        <div class="sort-box">
+            <select id="sortSelect">
+                <option value="date-asc">Date: Oldest First</option>
+                <option value="date-desc">Date: Newest First</option>
+                <option value="title-asc">Title: A-Z</option>
+                <option value="title-desc">Title: Z-A</option>
+            </select>
+        </div>
+
+    </section>
+
+    <div class="result-info">
+        <p id="resultCount">Loading events...</p>
+    </div>
+
+    <div id="eventsContainer" class="events-container"></div>
+
+    <div class="pagination">
+        <button id="prevBtn">Previous</button>
+        <span id="pageInfo">Page 1</span>
+        <button id="nextBtn">Next</button><br><br><br>
+    </div>
+<nav>
+<a href="Home.html">HOME</a>
+</nav>
+</main>
+
+<script src="events.js"></script>
+<script src="darktheme.js"></script>
+
+</body>
+</html>
