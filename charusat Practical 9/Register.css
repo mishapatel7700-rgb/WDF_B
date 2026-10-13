@@ -1,0 +1,110 @@
+
+body {
+    background-color: beige;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #123A70;
+}
+
+header p {
+    font-size: 17px;
+}
+
+form {
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-weight: normal;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+    box-sizing: border-box;
+    width: 230px;
+    font-size: 16px;
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+
+input:focus,
+select:focus {
+    border-color: #123A70;
+    outline: 2px solid rgba(18, 58, 112, 0.2);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 8px;
+    accent-color: #123A70;
+}
+
+label.option-label {
+    width: auto;
+    text-align: left;
+}
+
+label.terms-label {
+    width: auto;
+    text-align: left;
+}
+
+button {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 20px;
+    background-color: #123A70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d2548;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#formMessage {
+    color: #b00020;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    label:not(.option-label):not(.terms-label) {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    input:not([type="radio"]):not([type="checkbox"]),
+    select {
+        width: 100%;
+        margin: 6px 0 14px;
+    }
+}
