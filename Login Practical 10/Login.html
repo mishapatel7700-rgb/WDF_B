@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARUSAT Student Portal - Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="darktheme.css">
+</head>
+<body>
+    <button type="button" id="themeBtn">Dark Mode</button>
+
+    <header>
+        <h1>CHARUSAT Student Portal</h1>
+    </header>
+
+    <main>
+        <h2>Login</h2>
+
+        <form action="login.php" method="POST" id="loginForm">
+            <label for="email">Registered email:</label>
+            <input type="email" id="email" name="email"
+                   autocomplete="username" required maxlength="254">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                   autocomplete="current-password" required>
+
+            <label class="remember">
+                <input type="checkbox" name="remember" value="1">
+                Remember me for 30 days
+            </label>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p>
+            New user?
+            <a href="Register.html">Register here</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>© 2026 CHARUSAT Student Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="login.js"></script>
+    <script src="darktheme.js"></script>
+</body>
+</html>
