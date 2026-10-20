@@ -1,0 +1,14 @@
+body{background:beige;font-family:Arial,sans-serif;text-align:center;margin:0;padding:20px;color:#18243a}
+h1{font-size:clamp(28px,5vw,40px);color:#123A70}
+.auth-card{max-width:520px;margin:24px auto;padding:24px;background:rgba(255,255,255,.78);border-radius:12px;box-shadow:0 5px 18px #00000014}
+form{max-width:430px;margin:20px auto;padding:10px;text-align:left}
+label{display:block;margin:14px 0 6px;font-weight:600}
+input:not([type=checkbox]){box-sizing:border-box;width:100%;font-size:16px;padding:10px;border:1px solid #888;border-radius:4px}
+input:focus,select:focus{border-color:#123A70;outline:2px solid #123a7033}
+.check-row{display:flex;gap:8px;align-items:center;font-weight:normal}
+button{display:inline-block;margin:8px;padding:10px 20px;background:#123A70;color:#fff;border:0;border-radius:5px;cursor:pointer}
+button:hover{background:#0d2548}.main-button{width:100%;margin:18px 0 4px}
+footer{margin-top:30px}.notice{padding:12px;border-radius:6px}.success{background:#dcfce7;color:#166534}.error{background:#fee2e2;color:#991b1b}
+.theme-button{position:absolute;right:18px;top:18px}
+a{color:#123A70}
+@media(max-width:600px){body{padding:12px}.auth-card{padding:14px;margin-top:60px}}

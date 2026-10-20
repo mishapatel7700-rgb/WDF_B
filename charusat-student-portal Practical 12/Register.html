@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHARUSAT Student Portal — Registration</title>
+  <link rel="stylesheet" href="Register.css"><link rel="stylesheet" href="darktheme.css">
+</head>
+<body>
+<button type="button" id="themeBtn" class="theme-button">Dark Mode</button>
+<header><h1>CHARUSAT Student Portal</h1><p>Create your student account</p></header>
+<main class="auth-card">
+<h2>Registration Form</h2>
+<form action="register.php" method="post" id="registerForm">
+  <label for="name">Full name:</label><input id="name" name="name" required minlength="2" maxlength="50" pattern="[A-Za-z ]{2,50}">
+  <label for="username">Username:</label><input id="username" name="username" required minlength="3" maxlength="50" pattern="[A-Za-z0-9_]{3,50}">
+  <label for="email">Email:</label><input id="email" name="email" type="email" required maxlength="254">
+  <label for="mobile">Mobile:</label><input id="mobile" name="mobile" type="tel" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit Indian mobile">
+  <label for="password">Password:</label><input id="password" name="password" type="password" required minlength="8" maxlength="72" autocomplete="new-password">
+  <label for="confirmPassword">Confirm password:</label><input id="confirmPassword" name="confirmPassword" type="password" required minlength="8" maxlength="72" autocomplete="new-password">
+  <label for="course">Course:</label><select id="course" name="course" required>
+    <option value="">Select course</option><option>BCA</option><option>BBA</option><option>B.Tech</option><option>MCA</option><option>MBA</option>
+  </select>
+  <label for="year">Year:</label><select id="year" name="year" required>
+    <option value="">Select year</option><option value="1">1st Year</option><option value="2">2nd Year</option><option value="3">3rd Year</option><option value="4">4th Year</option>
+  </select>
+  <span class="field-label">Gender:</span><div class="radio-group">
+    <label class="option-label"><input type="radio" name="gender" value="Male" required> Male</label>
+    <label class="option-label"><input type="radio" name="gender" value="Female"> Female</label>
+    <label class="option-label"><input type="radio" name="gender" value="Other"> Other</label>
+  </div>
+  <label class="terms-label"><input type="checkbox" name="terms" value="accepted" required> I accept the Terms and Conditions</label>
+  <button type="submit" class="main-button">Register</button>
+</form>
+<p>Already registered? <a href="Login.php">Log in</a></p>
+</main>
+<footer><p>© 2026 CHARUSAT Student Portal. All rights reserved.</p></footer>
+<script src="register.js"></script><script src="darktheme.js"></script>
+</body></html>
