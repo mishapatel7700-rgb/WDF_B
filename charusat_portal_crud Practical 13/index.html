@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charusat Portal - AJAX / Fetch API CRUD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Charusat Portal</h1>
+        <p>AJAX / Fetch API CRUD (Practical 13)</p>
+    </header>
+
+    <main class="container">
+        <!-- Add Event Form Card -->
+        <section class="card">
+            <h2>Add Event Asynchronously</h2>
+            <form id="eventForm">
+                <div class="form-group">
+                    <label for="eventTitle">Event Title</label>
+                    <input type="text" id="eventTitle" required autocomplete="off">
+                </div>
+                
+                <div class="form-group">
+                    <label for="executionDate">Execution Date</label>
+                    <input type="date" id="executionDate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="detailedDescription">Detailed Description</label>
+                    <textarea id="detailedDescription" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" id="submitBtn">Submit via API</button>
+            </form>
+        </section>
+
+        <!-- Events List Card -->
+        <section class="card list-card">
+            <h2>Spoural Spoural Events Directory</h2>
+            <div id="eventsContainer">
+                <!-- Dynamic events inject here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
